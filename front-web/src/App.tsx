@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
 import './App.css';
+import NavBar from './NavBar';
 
 function App() {
   return (
     <div>
-      <h2>Hleeo</h2>
+      <NavBar />
     </div>
   );  
 }
