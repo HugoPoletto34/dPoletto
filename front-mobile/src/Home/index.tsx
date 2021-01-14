@@ -5,7 +5,7 @@ import { RectButton } from 'react-native-gesture-handler';
 import Header from '../Header';
 
 export default function Home() {
-    
+
     const navigation = useNavigation();
 
 
@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
         <>
-        <Header />
+            <Header />
             <View style={styles.container}>
                 <Image source={require('../assets/deliveryman.png')} />
                 <Text style={styles.title}>Acompanhe os pedidos e {'\n'} entregue no prazo!</Text>

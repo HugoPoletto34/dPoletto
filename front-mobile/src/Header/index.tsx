@@ -4,18 +4,20 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 export default function Header() {
-    const navigation = useNavigation();
 
-    const handleOnPress = () => {
-        navigation.navigate('Home');
-    }
-    return (
-      <TouchableWithoutFeedback onPress={handleOnPress}> 
-        <View style={styles.container}>
-            <Image source={require('../assets/logo.png')} />
-            <Text style={styles.text}>DPoletto</Text>
-        </View>
-      </TouchableWithoutFeedback>
+  const navigation = useNavigation();
+
+  const handleOnPress = () => {
+    navigation.navigate('Home');
+  }
+
+  return (
+    <TouchableWithoutFeedback onPress={handleOnPress}>
+      <View style={styles.container}>
+        <Image source={require('../assets/logo.png')} />
+        <Text style={styles.text}>DPoletto</Text>
+      </View>
+    </TouchableWithoutFeedback>
   );
 }
 
@@ -33,8 +35,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 25,
     letterSpacing: -0.24,
-    
+
     color: '#FFF',
-    marginLeft : 15,
+    marginLeft: 15,
   }
 });
